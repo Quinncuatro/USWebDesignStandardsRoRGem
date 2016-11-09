@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'uswds/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "US_Web_Design_Standards"
+  spec.name          = "us_web_design_standards_ror"
   spec.version       = Uswds::VERSION
   spec.authors       = ["Henry Quinn"]
   spec.email         = ["henryquinniv@gmail.com"]
