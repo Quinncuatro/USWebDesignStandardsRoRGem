@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'uswds/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "uswds"
+  spec.name          = "US_Web_Design_Standards"
   spec.version       = Uswds::VERSION
   spec.authors       = ["Henry Quinn"]
   spec.email         = ["henryquinniv@gmail.com"]
 
-  spec.summary       = "United States Web Design Standards"
-  spec.description   = "United States Web Design Standards"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "This is a RoR ready port of the US Web Design Standards."
+  spec.description   = "I wanted to use the US Web Design Standards in a project for work and found that I had to edit quite a bit to get it ready for Rails development; figured I could share the result to save people the hassle later."
+  spec.homepage      = "https://github.com/Quinncuatro/USWebDesignStandardsRoRGem"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
