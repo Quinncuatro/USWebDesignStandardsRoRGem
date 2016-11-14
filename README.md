@@ -1,15 +1,13 @@
 # Uswds
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/uswds`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Hey, internet! I bundled the [US Web Design Standards](https://standards.usa.gov/) into a gem to make web development for federal agencies easier when using Ruby on Rails. It took me a bit of tinkering, and wasn't something I wanted to do again, so I figured I'd share the results of the effort. As of today, I think everything works "the Ruby way," but if you find anything at all, let me know or submit a pull request and we'll make sure to keep this updated.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'uswds'
+gem 'us_web_design_standards_ror'
 ```
 
 And then execute:
@@ -18,11 +16,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install uswds
+    $ gem install us_web_design_standards_ror
 
 ## Usage
 
-TODO: Write usage instructions here
+The US Web Design Standards documentation can be found [here](https://standards.usa.gov/). It behaves similarly to Bootstrap, but has some peculiarities.
 
 ## Development
 
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/uswds. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Quinncuatro/USWebDesignStandardsRoRGem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
