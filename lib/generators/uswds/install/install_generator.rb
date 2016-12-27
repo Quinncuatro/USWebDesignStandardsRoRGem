@@ -7,14 +7,14 @@ module Uswds
 
       desc "This generator installs USWDS framework to Asset Pipeline"
       def add_assets
-        js_inject = " //= require uswds"
+        js_inject = "//= require uswds\n"
         app_js = File.join(Rails.root, 'app', 'assets', 'javascripts', 'application.js')
-        css_inject = " *= require uswds"
+        css_inject = "*= require uswds\n"
         app_scss = File.join(Rails.root, 'app', 'assets', 'stylesheets', 'application.scss')
         app_css = File.join(Rails.root, 'app', 'assets', 'stylesheets', 'application.css')
 
         if File.exist?(app_js)
-          insert_into_file app_js, js_inject, :after => "require jquery\n"
+          insert_into_file app_js, js_inject, :after => "require_tree .\n"
         else
           say_status('','Nor application.js could not be found!')
         end
