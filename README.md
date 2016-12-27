@@ -4,35 +4,47 @@ Hey, internet! I bundled the [US Web Design Standards](https://standards.usa.gov
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add to your application's Gemfile:
 
 ```ruby
 gem 'us_web_design_standards_ror'
 ```
 
-And then execute:
+then run `bundle` in the console, and then run:
 
-    $ bundle
+```bash
+rails g uswds:install
+```
 
-Or install it yourself as:
+command. This should add:
 
-    $ gem install us_web_design_standards_ror
+```ruby
+*= require uswds
+```
+
+into `app/assets/stylesheets/application.css`, as well as
+
+```ruby
+//= require uswds
+```
+
+into `app/assets/javascripts/application.js`.
 
 ## Usage
 
 The US Web Design Standards documentation can be found [here](https://standards.usa.gov/). It behaves similarly to Bootstrap, but has some peculiarities.
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Quinncuatro/USWebDesignStandardsRoRGem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/Quinncuatro/USWebDesignStandardsRoRGem.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## To-Do
+
+- [X] Create installer to inject CSS/JS into asset pipeline
+- [ ] Update installer to inject fonts/images into asset pipeline
+- [ ] Create demo page to show implementations of various USWDS features in production
+- [ ] Clean up code so that this doesn't LOOK like my first gem
