@@ -14,7 +14,7 @@ module Uswds
         app_css = File.join(Rails.root, 'app', 'assets', 'stylesheets', 'application.css')
 
         if File.exist?(app_js)
-          insert_into_file app_js, js_inject, :after => "require jjquery\n"
+          insert_into_file app_js, js_inject, :after => "require jquery\n"
         else
           say_status('','Nor application.js could not be found!')
         end
