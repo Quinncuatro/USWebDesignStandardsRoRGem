@@ -1,6 +1,6 @@
-# Uswds
+# US Web Design Standards
 
-Hey, internet! I bundled the [US Web Design Standards](https://standards.usa.gov/) into a gem to make web development for federal agencies easier when using Ruby on Rails. It took me a bit of tinkering, and wasn't something I wanted to do again, so I figured I'd share the results of the effort. As of today, I think everything works "the Ruby way," but if you find anything at all, let me know or submit a pull request and we'll make sure to keep this updated.
+Hey, internet! I bundled the [US Web Design Standards](https://standards.usa.gov/) into a gem to make Ruby on Rails development easier for federal agencies. It took me a bit of tinkering, and wasn't something I wanted to do again, so I figured I'd share the results of the effort. As of today, I think everything works "the Ruby way," but if you find anything at all, let me know or submit a pull request and I'll make sure to keep this updated.
 
 ## Installation
 
@@ -36,4 +36,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Quinnc
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
