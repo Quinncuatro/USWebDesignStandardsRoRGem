@@ -7,28 +7,22 @@ Hey, internet! I bundled the [US Web Design Standards](https://standards.usa.gov
 Add to your application's Gemfile:
 
 ```ruby
-gem 'us_web_design_standards_ror'
+gem 'us_web_design_standards_ror', '0.2.3'
 ```
 
-then run `bundle` in the console, and then run:
+then run `bundle` in the console, and then add the following to /app/assets/stylesheets/application.css:
 
 ```bash
-rails g uswds:install
-```
-
-command. This should add:
-
-```ruby
 *= require uswds
 ```
 
-into `app/assets/stylesheets/application.css`, as well as
+and add the following to /app/assets/javascripts/application.js:
 
-```ruby
+```bash
 //= require uswds
 ```
 
-into `app/assets/javascripts/application.js`.
+From there, you should be good with the CSS and JS of the U.S. Web Design Standards. Integration of the bundled fonts and images is coming in a future release.
 
 ## Usage
 
@@ -44,7 +38,8 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## To-Do
 
-- [X] Create installer to inject CSS/JS into asset pipeline
-- [ ] Update installer to inject fonts/images into asset pipeline
+~~- [X] Create installer to inject CSS/JS into asset pipeline~~
+- [X] Make stable way to include USWDS CSS/JS into asset pipeline
+- [ ] Create stable way to inject fonts/images into asset pipeline
 - [ ] Create demo page to show implementations of various USWDS features in production
 - [ ] Clean up code so that this doesn't LOOK like my first gem

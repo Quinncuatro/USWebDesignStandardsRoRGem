@@ -1,4 +1,7 @@
 # CHANGELOG
+## 0.2.3
+- Got rid of unnecessary complications (installer)
+- Updated README to reflect same
 
 ## 0.2.2
 - Updated version number

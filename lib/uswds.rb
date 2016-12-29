@@ -1,6 +1,5 @@
 require "uswds/version"
-require "uswds/engine"
 
 module Uswds
-  require 'uswds/engine'
+  class Engine < ::Rails::Engine; end
 end
